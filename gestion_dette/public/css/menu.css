@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+:root {
+  --blue: #b2d9ee;
+  --white: rgba(255, 255, 255, 0.859);
+  --grey: #888484f6;
+}
+body {
+  overflow: hidden;
+  /* margin :0; */
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  /* Dégradé linéaire oblique */
+  background: linear-gradient(135deg, var(--blue),rgba(255, 0, 0, 0.366));
+  background: linear-gradient(135deg, rgba(255, 0, 0, 0.399), var(--blue));
+  /* Prend toute la hauteur de la page */
+  min-height: 100vh;
+  margin: 0;
+}
+.main {
+  height: 98vh;
+  width: 98%;
+  margin: auto;
+
+}
+.left {
+  width: 30%;
+  background-color: var(--blue);
+  border-radius: 0 0.8rem 0 0;
+  padding: 0.9rem;
+  height: 98vh;
+}
+.menu-top {
+  display: flex;
+  height: 20%;
+  align-items: center;
+  /* flex-direction: column; */
+}
+.menu-bottom {
+  margin-top: 30px;
+}
+.profile {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%; /* Rendre l'image ronde */
+  margin-bottom: 0.5rem;
+}
+.profile img {
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.who {
+  text-align: center;
+  margin-left: 2rem;
+  color: var(--white);
+}
+.division {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+.menu-milieu {
+  height: 45%;
+  padding: 1.4rem 0 0 0;
+  align-items: center;
+}
+.main-milieu {
+  margin-bottom: 0.7rem;
+  color: var(--white);
+}
+.navbar .lien {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  gap: 1rem; /* Espace entre l'icône et le texte */
+  text-decoration: none; /* Supprime le soulignement */
+  color: inherit; /* Utilise la couleur de texte parente */
+  border-radius: 0.4rem;
+  transition: background-color 0.3s, color 0.3s; /* Animation pour la couleur et le background */
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+.navbar .active {
+  background-color: var(--white);
+}
+.navbar .lien {
+  padding: 0.2rem;
+  color: var(--grey);
+  font-family: "Inter", sans-serif;
+  font-size: 14;
+}
+
+.navbar .lien a {
+  text-decoration: none;
+  color: inherit;
+  /* padding: .2rem; */
+  /* font-family: "Inter", sans-serif;
+    font-size: 14; */
+}
+.navbar .menu-icon {
+  font-size: 1.2rem; /* Taille des icônes */
+  transition: color 0.3s; /* Transition pour l'icône */
+}
+.navbar .lien:hover {
+  background-color: #333; /* Couleur de fond au survol */
+  color: #ffffff; /* Couleur du texte au survol */
+}
+/* .navbar .lien:hover .menu-icon {
+    color: #ffffff; /* Change aussi la couleur de l'icône au survol */
+/*} */
+.navbar .sortie {
+  color: red;
+}
+.navbar .settings1 {
+  margin-bottom: 2rem;
+}
+.navbar h6 {
+  margin-top: 0.5rem;
+  color: var(--grey);
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .menu-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile {
+    margin-bottom: 0.5rem;
+  }
+
+  .who {
+    text-align: center;
+    font-size: 0.7rem;
+    margin-left: 0%;
+  }
+}

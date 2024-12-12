@@ -1,0 +1,124 @@
+.haut{
+    display: flex;
+    padding: .8rem;
+    width: 80%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    border-radius: 29px;
+border: 3px solid rgba(25, 159, 231, 0.20);
+background: #FFF;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+height: 35%;
+justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.ligne1{
+    display: flex;
+    height: 40%;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.colone1{
+    margin-right: 20px;
+
+}
+.ligne1 label{
+    width: 50%;
+    color: #000;
+-webkit-text-stroke-width: 1;
+-webkit-text-stroke-color: rgba(25, 159, 231, 0.20);
+font-family: Inter;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.ligne1 input{
+    width: 25;
+    height: 57%;
+    border-radius: 13px;
+border: 1px solid rgba(25, 159, 231, 0.20);
+background: rgba(25, 159, 231, 0.20);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}  
+  /* Container global */
+  .bas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  /* Section des paiements */
+  .paiements, .enregistrement {
+    width: 48%;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Titres */
+  .paiements h2, .enregistrement h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-decoration: underline;
+  }
+  
+  /* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #f4f4f4;
+  }
+  
+  /* Formulaire */
+  form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* Boutons */
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type="reset"] {
+    background-color: #ff6b6b;
+    color: #fff;
+  }
+  
+  button[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  

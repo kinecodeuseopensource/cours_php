@@ -190,7 +190,7 @@ function insertDettes(array &$tabClients,array $tabDette,$index ):void{
         echo "Montant de la dette : ". $dette["montverse"]."\t";
     }
  }
- function payerDette($dette,$)
+//  function payerDette($dette,$)
 
 
 

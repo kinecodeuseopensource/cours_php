@@ -1,0 +1,92 @@
+/* Styles du tableau */
+.debt-summary {
+    padding: 20px;
+    width: 100%;
+}
+
+.debt-summary h1 {
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.table-container {
+    background-color: white;
+    border-radius: 10px;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.debt-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.debt-table th,
+.debt-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.debt-table th {
+    background-color: #fff;
+    font-weight: 600;
+    color: #333;
+}
+
+.debt-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.debt-table tr.highlighted {
+    background-color: #e6f3ff;
+}
+
+/* Boutons d'action */
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-pay,
+.btn-cancel {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-pay {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-cancel {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.btn-pay:hover {
+    background-color: #0056b3;
+}
+
+.btn-cancel:hover {
+    background-color: #e2e6ea;
+}
+/* Adaptation pour les écrans de téléphone (max 768px) */
+@media (max-width: 768px) {
+    table {
+      display: block; /* Rend le tableau défilable horizontalement */
+      overflow-x: auto; /* Ajoute une barre de défilement */
+      white-space: nowrap; /* Empêche la coupure des textes */
+    }
+  
+    th, td {
+      font-size: 0.9rem; /* Réduit la taille de la police */
+    }
+  
+    .actions {
+      text-align: center;
+    }
+  }

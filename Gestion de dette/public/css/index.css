@@ -1,0 +1,76 @@
+
+body{
+    overflow: hidden; 
+    /* margin :0; */
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.frame {
+    
+    display: flex;
+    flex-direction: column; /* Définit la direction en colonne */
+  
+    width: 60%;
+    margin: auto;
+    height: 500px;
+    padding: 20px;
+    border: 1px solid #000000;
+    background-color: #fcfbfb;
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espacement entre les champs */
+    align-items: center;
+}
+#user{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-user{
+    font-size: 90px;
+    color: #199FE7;
+}
+.label{
+    display: flex;
+    flex-direction: column; /* Définit la direction en colonne */
+    height: 45%;
+    width: 80%;
+    margin: auto;
+    padding: 40px;
+    justify-content: space-between;
+    
+}
+.boutton{
+    float: right;
+
+}
+.boutton1{
+    color: #199FE7;
+    background-color: #fdfffd;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+input[type="password"],
+input[type="email"] {
+    width: 100%; /* Prend toute la largeur disponible */
+    padding: 25px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+.boutton1:hover {
+    background-color: #199FE7;
+    color: #fcfbfb;
+}
+
